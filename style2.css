@@ -1,0 +1,45 @@
+/* Existing styles for menu page, detail page, and buying page */
+/* ... */
+
+/* New styles for payment page */
+.payment-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.payment-form {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.payment-form h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.confirm-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.confirm-button:hover {
+    background-color: #0056b3;
+}

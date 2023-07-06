@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Buying Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function performAddition() {
+            // Check if the checkbox is checked
+            if (document.getElementById("masayoshi").checked) {
+                // Pre-defined values for addition
+                var num1 = 74499;
+                var num2 = 100;
+
+                // Perform addition
+                var sum = num1 + num2;
+
+                // Display the result
+                document.getElementById("result").innerHTML = "Sum: " + sum;
+            } else {
+                // If checkbox is not checked, clear the result
+                document.getElementById("result").innerHTML = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Product Buying Page</h1>
+    <div class="product-buying-container">
+        <div class="product-buying-item">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            
+            <p class="description">
+                <li>Key Features:
+
+                <ul>High-Resolution Image Sensor: Our Sony camera features a high-resolution image sensor that captures stunning details and rich colors, producing sharp and lifelike images.</ul>
+                
+                <ul>Fast and Accurate Autofocus System: Our camera is equipped with a fast and accurate autofocus system that uses advanced phase-detection and contrast-detection technology.</ul>
+                
+                <ul>4K Video Recording: Our Sony camera allows you to capture 4K Ultra HD videos, providing you with high-quality footage with exceptional clarity.</ul>
+                
+                <ul>Wi-Fi Connectivity and Remote Control: Our Sony camera comes with built-in Wi-Fi connectivity, allowing you to transfer photos.</ul></li></p>
+            <form class="buy-form" action="checkout.php" method="post">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+                
+                
+                          </form>
+                          <input type="checkbox" id="masayoshi" name="masayoshi" onchange="performAddition()"/><a href="masayoshi.html">masayoshi</a>              
+                
+               <p class="price">74499</p>
+               <p id="result"></p>
+               <form action="main2.html">          
+                <button class="buy-now" type="submit" action>Buy Now</button>
+               </form>
+        </div>
+    </div>
+    
+</body>
+</html>
